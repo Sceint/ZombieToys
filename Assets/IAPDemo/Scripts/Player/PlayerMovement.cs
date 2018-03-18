@@ -32,19 +32,19 @@ namespace CompleteProject
         void FixedUpdate ()
         {
 			float h = 0f, v = 0f;
-			#if UNITY_EDITOR
+		//	#if UNITY_EDITOR
             // Store the input axes.
             h = CrossPlatformInputManager.GetAxisRaw("Horizontal");
 			v = CrossPlatformInputManager.GetAxisRaw("Vertical");
-			#elif UNITY_ANDROID
-			h = Input.acceleration.x;
-			v = Input.acceleration.y;
-			Debug.Log ("movNormal: " + h + " " + v);
+		//	#elif UNITY_ANDROID
+			//h = Input.acceleration.x;
+			//v = Input.acceleration.y;
+			//Debug.Log ("movNormal: " + h + " " + v);
 
-			h *= Time.deltaTime;
-			v *= Time.deltaTime;
-			Debug.Log ("mov: " + h + " " + v);
-			#endif
+			//h *= Time.deltaTime;
+			//v *= Time.deltaTime;
+			//Debug.Log ("mov: " + h + " " + v);
+			//#endif
 
 			Debug.Log ("mov: " + h + " " + v);
             // Move the player around the scene.
